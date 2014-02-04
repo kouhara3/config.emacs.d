@@ -11,15 +11,16 @@
       (normal-top-level-add-subdirs-to-load-path))))
 
 ;; Set background color and transparency(设置背景颜色以及透明效果)
-(custom-set-faces
- '(default ((t (:background "#000022" :foreground "#EEEEEE"))))
- '(cursor (
-					 (((class color) (background dark )) (:background "#00AA00"))
-					 (((class color) (background light)) (:background "#999999"))
-					 (t ())
-					 )))
+;; (custom-set-faces
+;;  '(default ((t (:background "#000022" :foreground "#EEEEEE"))))
+;;  '(cursor (
+;; 					 (((class color) (background dark )) (:background "#00AA00"))
+;; 					 (((class color) (background light)) (:background "#999999"))
+;; 					 (t ())
+;; 					 )))
+
 ;;フレーム透過設定
-(add-to-list 'default-frame-alist '(alpha . (0.90 0.90)))
+;;(add-to-list 'default-frame-alist '(alpha . (0.90 0.90)))
 
 ;; Inhibit Backup file
 (setq backup-inhibited t)
@@ -84,17 +85,16 @@
 (setq show-paren-delay 1)
 (setq show-paren-style 'epression)
 (set-face-attribute 'show-paren-match-face nil
-		    :background "black"
-		    :foreground nil
-		    :underline t
-		    ;;		    :weight 'bold
-		    )
+   :background "blue"
+   :foreground nil
+   :underline t
+   :weight 'bold
+)
 (set-face-attribute 'show-paren-mismatch-face nil
-		    :background "black"
-		    :foreground "DarkRed"
-		    
-		    ;;		    :weight 'bold
-		    )
+   :background "blue"
+   :foreground "DarkRed"
+   :weight 'bold
+)
 
 ;; hl-line-mode
 (require 'hl-line)
@@ -111,7 +111,6 @@
 
 ;; Cursor Design
 (add-to-list 'default-frame-alist '(cursor-type . (bar . 4)))
-
 
 ;; Linum
 (require 'linum)
