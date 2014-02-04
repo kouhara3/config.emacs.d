@@ -2,7 +2,7 @@
 (setq user-mail-address "takahara.gregory@gmail.com")
 
 ;; Load path
-(defconst self-lisp "~/.emacs.d/site-lisp" "The directory for my elisp file.")
+(defconst self-lisp "~/.emacs.d/site-lisp")
 (dolist (dir (let ((dir (expand-file-name self-lisp)))
                (list dir (format "%s%d" dir emacs-major-version))))
   (when (and (stringp dir) (file-directory-p dir))
