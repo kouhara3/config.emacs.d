@@ -97,17 +97,17 @@
 )
 
 ;; hl-line-mode
-(require 'hl-line)
-(custom-set-faces 
- '(hl-line
-   ((((class color)
-      (background dark))
-     (:background "MidnightBlue"))
-    (((class color)
-     (background light))
-     (:background "MidnightBlue"))))
-)
-(global-hl-line-mode)
+;; (require 'hl-line)
+;; (custom-set-faces 
+;;  '(hl-line
+;;    ((((class color)
+;;       (background dark))
+;;      (:background "MidnightBlue"))
+;;     (((class color)
+;;      (background light))
+;;      (:background "MidnightBlue"))))
+;; )
+;; (global-hl-line-mode)
 
 ;; Cursor Design
 (add-to-list 'default-frame-alist '(cursor-type . (bar . 4)))
